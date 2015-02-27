@@ -1,0 +1,22 @@
+{
+  "name": "Webmaker-blog-theme",
+  "version": "2.0.0",
+  "description": "",
+  "author": "Mozilla",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mozilla/blog.webmaker.org"
+  },
+  "license": "MPL-2.0",
+  "scripts": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-imagemin": "0.3.0",
+    "grunt-contrib-jshint": "0.7.1",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1"
+  },
+  "engines": {
+  "node": ">=0.10.0"
+  }
+}
