@@ -7,3 +7,137 @@
  Template:       OneMozilla
 */
 
+@article-top-spacing: 2rem;
+@article-bottom-spacing: @article-top-spacing;
+@article-left-spacing: 4rem;
+@article-right-spacing: @article-left-spacing;
+
+// Makerstrap variables
+@white: #fff;
+@lightgrey: #e3eaee;
+@darkgreen: #328f70;
+@brand-secondary: #013E5F;
+@grey: #4d4e53;
+// Breakpoints
+@screen-xs: 480px;
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+html,
+body {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+}
+
+h1,
+h2 {
+  text-shadow: none;
+}
+
+#tabzilla-panel {
+  font-size: 1.1rem;
+  h2 {
+    font-size: 1.3rem;
+  }
+  #tabzilla-promo #tabzilla-promo-gear.snippet a h4 {
+    font-size: 3.2rem;
+  }
+  #tabzilla-nav ul li#tabzilla-search input[type="search"] {
+    font-size: 1.2rem;
+  }
+}
+
+.inner-main-section {
+  margin-top: @article-top-spacing;
+  margin-right: @article-right-spacing;
+  margin-bottom: @article-bottom-spacing;
+  margin-left: @article-left-spacing;
+}
+
+#page {
+  background-image: none !important;
+  background-color: @lightgrey !important;
+}
+
+#masthead {
+  background-color: @darkgreen;
+  padding: 0 0 5rem 0;
+  margin-right: 0;
+  border-bottom: 7rem solid @brand-secondary;
+  hgroup {
+    padding-top: 3rem;
+  }
+  h1,
+  h2 {
+    color: @white;
+  }
+}
+
+.main {
+  background: @white;
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: @screen-md) {
+    width: 70rem;
+  }
+  .page-title {
+    .inner-main-section;
+  }
+  .post {
+    .entry-header {
+      padding: @article-top-spacing @article-right-spacing @article-bottom-spacing 9.2rem;
+      background-color: @brand-secondary;
+      h2 {
+        display: inline;
+      }
+      cite.author {
+        font-size: 1.4rem;
+        color: @white;
+      }
+      a {
+        color: @white;
+      }
+    }
+    .entry-header-title-author {
+      min-height: 5.5rem;
+    }
+    .entry-title {
+      margin: 0;
+      letter-spacing: 0;
+      min-height: auto;
+    }
+    .entry-posted {
+      padding-top: @article-top-spacing;
+      padding-left: @article-left-spacing;
+      background: none;
+      * {
+        color: @white;
+      }
+    }
+    .entry-summary,
+    .entry-content {
+      .inner-main-section;
+    }
+    .entry-meta {
+      .inner-main-section;
+      background: none;
+      box-shadow: none;
+      border: .1rem solid @grey;
+    }
+    p.edit {
+      .inner-main-section;
+    }
+  }
+  #comments {
+    .inner-main-section;
+  }
+}
+
+.sub {
+  background: @white;
+  padding: 4rem 2rem;
+  margin-left: 3rem;
+}

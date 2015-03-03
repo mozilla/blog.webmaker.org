@@ -1,7 +1,7 @@
 {
-  "name": "Webmaker-blog-theme",
-  "version": "2.0.0",
-  "description": "",
+  "name": "blog.webmaker.org",
+  "version": "1.0.0",
+  "description": "Custom One Mozilla child theme used on blog.webmaker.org. Originl One Mozilla theme can be found here:https://github.com/mozilla/One-Mozilla-blog/",
   "author": "Mozilla",
   "repository": {
     "type": "git",
@@ -9,6 +9,10 @@
   },
   "license": "MPL-2.0",
   "scripts": {},
+  "dependencies": {
+    "grunt": "0.4.2",
+    "grunt-cli": "0.1.13"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-imagemin": "0.3.0",
@@ -17,6 +21,6 @@
     "grunt-contrib-watch": "~0.6.1"
   },
   "engines": {
-  "node": ">=0.10.0"
+    "node": ">=0.10.0"
   }
 }
