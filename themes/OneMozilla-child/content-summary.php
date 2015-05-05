@@ -16,5 +16,13 @@
       <p class="meta"><b><?php _e('Categories','onemozilla'); ?>:</b> <?php the_category(', ') ?></p>
     </footer>
   <?php endif; ?>
+  <?php $comment_count = get_comments_number($post->ID);
+    if ( comments_open() || pings_open() || ($comment_count > 0) ) : ?>
+      <p class="entry-comments-num">
+        <a href="<?php comments_link() ?>" title="<?php if($comment_count > 0) { printf(_n( '1 response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet'); } ?>"><?php if ($comment_count > 999) : comments_number('0','1','1000+'); else : comments_number('0','1','%'); endif; ?>
+          comment<?php if ( ($comment_count > 1) ) : ?>s<?php endif; ?>
+        </a>
+      </p>
+  <?php endif; ?>
 
 </article><!-- #post -->

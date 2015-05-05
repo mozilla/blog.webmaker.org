@@ -1,7 +1,7 @@
   <header id="masthead" role="banner" <?php if (get_header_image()) : ?>class="image"<?php endif; ?>>
     <div class="wrap">
       <?php if (get_header_image()) : ?>
-        <img src="<?php header_image(); ?>" id="header-logo">
+        <a href="https://webmaker.org"><img src="<?php header_image(); ?>" id="header-logo"></a>
       <?php endif; ?>
 
       <hgroup>
