@@ -1,0 +1,394 @@
+@import url("../OneMozilla/style.css");
+@import url("less/font-awesome/css/font-awesome.min.css");
+/*
+ Theme Name:     One Mozilla Child
+ Theme URI:      https://github.com/mozilla/blog.webmaker.org
+ Description:    Custom One Mozilla child theme used on blog.webmaker.org. Originl One Mozilla theme can be found here:https://github.com/mozilla/One-Mozilla-blog/
+ Author:         Mozilla
+ Template:       OneMozilla
+*/
+html,
+body {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+}
+h1,
+h2 {
+  text-shadow: none;
+}
+#tabzilla-panel {
+  font-size: 1.1rem;
+}
+#tabzilla-panel h2 {
+  font-size: 1.3rem;
+}
+#tabzilla-panel #tabzilla-promo #tabzilla-promo-gear.snippet a h4 {
+  font-size: 3.2rem;
+}
+#tabzilla-panel #tabzilla-nav ul li#tabzilla-search input[type="search"] {
+  font-size: 1.2rem;
+}
+.inner-main-section {
+  margin-top: 2rem;
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
+}
+.control-btn {
+  background: #ffffff;
+  border-radius: .3rem;
+  padding: .7rem 1rem;
+}
+.flat-input-box {
+  box-shadow: none;
+  background: #ffffff;
+  transition: none;
+}
+.flat-input-box:focus,
+.flat-input-box:hover {
+  box-shadow: none;
+  background: #ffffff;
+}
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="password"],
+input[type="text"],
+textarea {
+  box-shadow: none;
+  background: #ffffff;
+  transition: none;
+  border-radius: .3rem;
+}
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+textarea:focus,
+input[type="email"]:hover,
+input[type="url"]:hover,
+input[type="search"]:hover,
+input[type="password"]:hover,
+input[type="text"]:hover,
+textarea:hover {
+  box-shadow: none;
+  background: #ffffff;
+}
+#page {
+  background-image: none !important;
+  background-color: #e3eaee !important;
+}
+#masthead {
+  background: url("img/green-background.jpg") #328f70;
+  background-size: cover;
+  padding: 0 0 5rem 0;
+  margin-right: 0;
+  margin-bottom: 3rem;
+}
+#masthead hgroup {
+  padding-top: 3rem;
+}
+#masthead h1,
+#masthead h2 {
+  color: #ffffff;
+}
+#masthead.image hgroup {
+  padding-right: 0;
+}
+#header-logo {
+  margin-top: 2rem;
+  max-width: 25rem;
+}
+#site-title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  #site-title {
+    font-size: 7rem;
+  }
+}
+#site-title a {
+  color: #ffffff;
+}
+.main {
+  background: none;
+  padding: 0;
+  margin: 0;
+  /* *************************
+  * Comments
+  */
+}
+@media screen and (min-width: 992px) {
+  .main {
+    width: 70rem;
+  }
+}
+.main .page-title {
+  margin-top: 2rem;
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
+}
+.main .nav-paging {
+  padding: 2rem 3.5rem;
+}
+.main .post {
+  background: #ffffff;
+  padding-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+.main .post .entry-header {
+  padding: 2rem 3.5rem;
+  background-color: #01527d;
+}
+.main .post .entry-header h2 {
+  display: inline;
+}
+.main .post .entry-header cite.author {
+  display: block;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-top: .5rem;
+}
+.main .post .entry-header cite.author:before {
+  content: "\f007";
+  font-family: "FontAwesome";
+  font-size: 1.6rem;
+  margin-right: .5rem;
+}
+.main .post .entry-header-title-author {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 5.5rem;
+}
+@media screen and (min-width: 992px) {
+  .main .post .entry-header-title-author {
+    float: left;
+    width: calc(100% - 8.5rem);
+    padding-left: 2rem;
+  }
+}
+.main .post .entry-header-title-author a {
+  color: #ffffff;
+}
+.main .post .entry-title {
+  margin: 0;
+  letter-spacing: 0;
+  min-height: auto;
+}
+.main .post .entry-posted-container {
+  width: 8.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .main .post .entry-posted-container {
+    float: left;
+    margin-bottom: 0;
+  }
+}
+.main .post .entry-posted {
+  position: relative;
+  padding: 1.5rem;
+  margin-bottom: 0;
+  border-radius: 50%;
+  background-image: none;
+  background-color: #013e5f;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .main .post .entry-posted {
+    width: auto;
+    height: auto;
+  }
+}
+.main .post .entry-posted * {
+  color: #ffffff;
+}
+.main .post .entry-summary,
+.main .post .entry-content {
+  margin-top: 2rem;
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
+}
+.main .post .entry-summary .more-link,
+.main .post .entry-content .more-link {
+  display: block;
+  float: right;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.main .post .entry-content {
+  margin: 2rem 3.5rem;
+}
+.main .post .entry-meta {
+  margin-top: 2rem;
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
+  box-shadow: none;
+  background: #ffffff;
+  transition: none;
+  background: #f8f8f8;
+}
+.main .post .entry-meta:focus,
+.main .post .entry-meta:hover {
+  box-shadow: none;
+  background: #ffffff;
+}
+.main .post p.edit {
+  margin-top: 2rem;
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
+}
+.main .post p.edit a {
+  background: #ffffff;
+  border-radius: .3rem;
+  padding: .7rem 1rem;
+}
+.main .entry-comments-num {
+  margin-top: 2rem;
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
+}
+.main .entry-comments-num a {
+  border: 0.1rem solid #e3eaee;
+  padding: .7rem 1rem;
+}
+.main .entry-comments-num a:before {
+  content: "\f075";
+  font-family: "FontAwesome";
+  margin-right: .7rem;
+}
+.main #comments {
+  margin-top: 2rem;
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
+}
+.main #comments a.comment-edit-link {
+  background: #ffffff;
+  border-radius: .3rem;
+  padding: .7rem 1rem;
+}
+.main #comment-list .comment,
+.main #comment-list .pingback,
+.main #comment-list .trackback {
+  box-shadow: none;
+  background: #ffffff;
+  transition: none;
+}
+.main #comment-list .comment:focus,
+.main #comment-list .pingback:focus,
+.main #comment-list .trackback:focus,
+.main #comment-list .comment:hover,
+.main #comment-list .pingback:hover,
+.main #comment-list .trackback:hover {
+  box-shadow: none;
+  background: #ffffff;
+}
+.main #comment-form input,
+.main #comment-form textarea {
+  background: #ffffff;
+  border: none;
+}
+/* *************************
+* sidebar
+*/
+.sub {
+  background: #ffffff;
+  padding: 3rem 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .sub {
+    margin-left: 3rem;
+  }
+}
+.sub #stay-connected a {
+  color: #01527d;
+}
+.sub #stay-connected a:hover {
+  color: #013e5f;
+}
+.sub #stay-connected .fa {
+  font-size: 4rem;
+  margin-right: .3rem;
+}
+.fm-search #s {
+  box-shadow: none;
+  background: #ffffff;
+  transition: none;
+  background: url("../OneMozilla/img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
+  padding-left: 3rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+.fm-search #s:focus,
+.fm-search #s:hover {
+  box-shadow: none;
+  background: #ffffff;
+}
+.fm-search #s:hover {
+  background: url("../OneMozilla/img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
+}
+/* *************************
+* widget
+*/
+.widget .widget-title {
+  margin: 3rem 0 .5rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+}
+.widget #webmaker-description {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+.widget #subsrcibe-webmaker-form input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.widget #subsrcibe-webmaker-form .btn-green {
+  width: 100%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-top: 1rem;
+}
+/* *************************
+* button
+*/
+.btn {
+  border: transparent;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 1.42857;
+  text-shadow: none;
+  padding: 1.3rem 1.5rem 1.1rem 1.5rem;
+  position: relative;
+  transition: none;
+}
+.btn-green {
+  background: #3fb58e;
+  box-shadow: 0 0.4rem 0 #328f70, inset 0 0.1rem 0 rgba(255, 255, 255, 0.5);
+}
+.btn-green:hover,
+.btn-green:focus {
+  box-shadow: 0 0.2rem 0 #328f70, inset 0 0.1rem 0 rgba(255, 255, 255, 0.5);
+  background-color: #3fb58e;
+  top: 0.2rem;
+}
+.btn-green:active {
+  box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  top: 0.4rem;
+}
