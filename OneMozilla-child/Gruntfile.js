@@ -1,5 +1,16 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+    compress: {
+      main: {
+        options: {
+          mode: "zip",
+          archive: "../OneMozilla-child.zip"
+        },
+        files: [
+          {expand: true, src: [ "**", "!node_modules/**" ]}
+        ]
+      }
+    },
     imagemin: {
       options: {
         optimizationLevel: 5,
@@ -40,11 +51,12 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['jshint', 'imagemin']);
+  grunt.registerTask('default', ['jshint', 'imagemin', 'compress']);
   grunt.registerTask('dev', ['watch']);
 };
