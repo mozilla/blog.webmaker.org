@@ -1,3 +1,4 @@
-/uploads/*
 .DS_Store
-node_modules/
+npm-debug.log
+OneMozilla/*
+*/node_modules/
