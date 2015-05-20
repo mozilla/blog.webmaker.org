@@ -357,12 +357,12 @@ textarea:hover {
   font-size: 1.8rem;
   line-height: 1.2;
 }
-.jetpack_subscription_widget input {
+#subscribe-email .jetpack_subscription_widget input {
   width: 100%;
   box-sizing: border-box;
   border-radius: .6rem;
 }
-.jetpack_subscription_widget input[type="submit"] {
+#subscribe-email .jetpack_subscription_widget input[type="submit"] {
   border: transparent;
   border-radius: 0.3rem;
   font-size: 1.4rem;
@@ -380,13 +380,13 @@ textarea:hover {
   padding-bottom: .5rem;
   margin-top: 1rem;
 }
-.jetpack_subscription_widget input[type="submit"]:hover,
-.jetpack_subscription_widget input[type="submit"]:focus {
+#subscribe-email .jetpack_subscription_widget input[type="submit"]:hover,
+#subscribe-email .jetpack_subscription_widget input[type="submit"]:focus {
   box-shadow: 0 0.2rem 0 #328f70, inset 0 0.1rem 0 rgba(255, 255, 255, 0.5);
   background-color: #3fb58e;
   top: 0.2rem;
 }
-.jetpack_subscription_widget input[type="submit"]:active {
+#subscribe-email .jetpack_subscription_widget input[type="submit"]:active {
   box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
   top: 0.4rem;
 }
