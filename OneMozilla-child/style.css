@@ -357,6 +357,12 @@ textarea:hover {
   font-size: 1.8rem;
   line-height: 1.2;
 }
+#subscribe-email input {
+  width: 100% !important;
+  padding: .6rem .5rem !important;
+  box-sizing: border-box;
+  border-radius: .6rem;
+}
 .jetpack_subscription_widget input {
   width: 100%;
   box-sizing: border-box;
@@ -378,7 +384,6 @@ textarea:hover {
   width: 100%;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  margin-top: 1rem;
 }
 .jetpack_subscription_widget input[type="submit"]:hover,
 .jetpack_subscription_widget input[type="submit"]:focus {
