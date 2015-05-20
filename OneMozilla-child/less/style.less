@@ -299,12 +299,12 @@ textarea {
 .fm-search {
   #s {
     .flat-input-box;
-    background: url("../OneMozilla/img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
+    background: url("img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
     padding-left: 3rem;
     box-sizing: border-box;
     width: 100%;
-    &:hover {
-      background: url("../OneMozilla/img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
+    &:focus, &:hover {
+      background: url("img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
     }
   }
 }
@@ -313,8 +313,11 @@ textarea {
 * widget
 */
 .widget {
+  input {
+    font-size: 1.4rem;
+  }
   .widget-title {
-    margin: 3rem 0 .5rem 0;
+    margin: 3rem 0 1rem 0;
     font-size: 1.8rem;
     letter-spacing: 0;
   }
@@ -323,17 +326,23 @@ textarea {
     font-size: 1.8rem;
     line-height: 1.2;
   }
-  #subsrcibe-webmaker-form {
-    input {
-      width: 100%;
-      box-sizing: border-box;
-    }
-    .btn-green {
-      width: 100%;
-      padding-top: .5rem;
-      padding-bottom: .5rem;
-      margin-top: 1rem;
-    }
+}
+
+.jetpack_subscription_widget {
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: .6rem;
+  }
+  input[type="email"] {
+  }
+  input[type="submit"] {
+    .btn;
+    .btn-green;
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: 1rem;
   }
 }
 
