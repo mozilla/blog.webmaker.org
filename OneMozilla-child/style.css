@@ -327,7 +327,7 @@ textarea:hover {
   box-shadow: none;
   background: #ffffff;
   transition: none;
-  background: url("../OneMozilla/img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
+  background: url("img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
   padding-left: 3rem;
   box-sizing: border-box;
   width: 100%;
@@ -337,14 +337,18 @@ textarea:hover {
   box-shadow: none;
   background: #ffffff;
 }
+.fm-search #s:focus,
 .fm-search #s:hover {
-  background: url("../OneMozilla/img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
+  background: url("img/icn-search.png") no-repeat scroll 5% 50% rgba(255, 255, 255, 0.8);
 }
 /* *************************
 * widget
 */
+.widget input {
+  font-size: 1.4rem;
+}
 .widget .widget-title {
-  margin: 3rem 0 .5rem 0;
+  margin: 3rem 0 1rem 0;
   font-size: 1.8rem;
   letter-spacing: 0;
 }
@@ -353,15 +357,38 @@ textarea:hover {
   font-size: 1.8rem;
   line-height: 1.2;
 }
-.widget #subsrcibe-webmaker-form input {
+.jetpack_subscription_widget input {
   width: 100%;
   box-sizing: border-box;
+  border-radius: .6rem;
 }
-.widget #subsrcibe-webmaker-form .btn-green {
+.jetpack_subscription_widget input[type="submit"] {
+  border: transparent;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 1.42857;
+  text-shadow: none;
+  padding: 1.3rem 1.5rem 1.1rem 1.5rem;
+  position: relative;
+  transition: none;
+  background: #3fb58e;
+  box-shadow: 0 0.4rem 0 #328f70, inset 0 0.1rem 0 rgba(255, 255, 255, 0.5);
   width: 100%;
   padding-top: .5rem;
   padding-bottom: .5rem;
   margin-top: 1rem;
+}
+.jetpack_subscription_widget input[type="submit"]:hover,
+.jetpack_subscription_widget input[type="submit"]:focus {
+  box-shadow: 0 0.2rem 0 #328f70, inset 0 0.1rem 0 rgba(255, 255, 255, 0.5);
+  background-color: #3fb58e;
+  top: 0.2rem;
+}
+.jetpack_subscription_widget input[type="submit"]:active {
+  box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  top: 0.4rem;
 }
 /* *************************
 * button
